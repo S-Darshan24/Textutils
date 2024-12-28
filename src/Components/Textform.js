@@ -50,13 +50,13 @@ export default function Textform(props) {
             <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={loclick}>Convert to lowerCase</button>
             <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={cleartext}>Clear Text</button>
             <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={copytext}>Copy Text</button>
-            <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={extraspeac}> Remove Extea Speac</button>
+            <button disabled={text.length === 0} className="btn btn-primary mx-1 my-1" onClick={extraspeac}> Remove Extra Speac</button>
            
 
             <div className="container my-4">
-                <h1>your text summary</h1>
+                <h3>Your Text Summary</h3>
                 <p> {text.split(/\s+/).filter((element)=>{return element.length!==0}).length} words and {text.length} characters</p>
-                <h1 className='preview'>Preview</h1>
+                <h3 className='preview'>Preview</h3>
                 <p>{text.length > 0 ? text : "Nothing to preview!"}</p>
                 <h5> {0.008 * text.split(" ").filter((element)=>{return element.length!==0}).length} minutes tead the wors</h5>
             </div>

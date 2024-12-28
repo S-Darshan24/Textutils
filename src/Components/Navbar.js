@@ -22,7 +22,6 @@ export default function Navbar(props) {
       document.querySelector('.darkmode').style.backgroundColor = 'black'; 
       document.querySelector('.darkmode').style.color = 'white';
       props.showalert(" Light mode has been enabled","success");
-      
       //change title for intraval 
       // setInterval(() =>{
       //   document.title = 'textutils is amazing'
@@ -48,7 +47,6 @@ export default function Navbar(props) {
     }
   }
   return (
-    //  <nav className="navbar navbar-expand-lg bg-body-tertiary">
      <nav className={`navbar navbar-expand-lg navbar-dark bg-dark`}> 
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">{props.title}</Link>
@@ -64,25 +62,9 @@ export default function Navbar(props) {
               <Link className="nav-link active" to="/about">about</Link>
             </li>
             <button type="button" className="darkmode" onClick={alldark}>{btnText}</button>
-            {/* <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a> */}
-            {/* <ul className="dropdown-menu">
-              <li><a className="dropdown-item" to="/">Action</a></li>
-              <li><a className="dropdown-item" to="/">Another action</a></li>
-              <li><hr className="dropdown-divider"/></li>
-              <li><a className="dropdown-item" to="/">Something else here</a></li>
-            </ul> */}
-            {/* </li> */}
-            {/* <li className="nav-item">
-            <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li> */}
+       
           </ul>
-          {/* <form className="d-flex" role="search">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button className="btn btn-outline-primary" type="submit">Search</button>
-        </form> */}
+       
         </div>
       </div>
     </nav>
