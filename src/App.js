@@ -26,12 +26,12 @@
     return (
       <>
         <Router>
-          <Navbar title="Textutils" showalert={showalert} />
+          <Navbar title="TextConvert" showalert={showalert} />
           <Alert alert={alert} />
           <div className="container my-3">
             <Routes>
               <Route path="/about" element={<About darlmode={props.alldark} />} />
-              <Route path="/" element={<Textform heading="TextUtils - Word Counter, Character Counter, Remove extra spaces" showalert={showalert} />} />
+              <Route path="/" element={<Textform h5 heading="Convrt Your Text" showalert={showalert}/>}/>
             </Routes>
           </div>
         </Router>

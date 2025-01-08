@@ -1,19 +1,18 @@
 import React, { useState } from 'react'
 
 
-
 export default function Textform(props) {
 
     const upclick = () => {
         let newtext = text.toUpperCase();
         settext(newtext);
-        props.showalert(" Converted to uppercase" , "success");
+        props.showalert("Convert to UpperCase" , "success");
     }
 
     const loclick = () => {
         let newtext2 = text.toLowerCase();
         settext(newtext2);
-        props.showalert(" Converted to LowerCase" , "success")
+        props.showalert(" Converted to lowerCase" , "success")
     }
 
     const cleartext = () => {

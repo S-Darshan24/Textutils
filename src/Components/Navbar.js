@@ -6,8 +6,8 @@ import { Link } from 'react-router-dom';
 export default function Navbar(props) {
 
   const [darkstyle, setdarkstyle] = useState({
-    color: "white",
-    backgroundColor: "black"
+    color: "black",
+    backgroundColor: "white"
   });
   const [btnText, setbtnText] = useState("Dark")
 
@@ -21,14 +21,6 @@ export default function Navbar(props) {
       document.body.style.color = 'black';
       document.querySelector('.darkmode').style.backgroundColor = 'black'; 
       document.querySelector('.darkmode').style.color = 'white';
-      props.showalert(" Light mode has been enabled","success");
-      //change title for intraval 
-      // setInterval(() =>{
-      //   document.title = 'textutils is amazing'
-      // }, 2000);
-      // setInterval(() =>{
-      //   document.title = ' install textutils Now'
-      // }, 1500);
       setbtnText("Dark");
 
     } else {
@@ -40,8 +32,6 @@ export default function Navbar(props) {
       document.body.style.color = 'white';
       document.querySelector('.darkmode').style.backgroundColor = 'white'; 
       document.querySelector('.darkmode').style.color = 'black';
-      props.showalert(" Dark mode has been enabled","success");
-      // document.title = 'Textutils - Dark mode'
        setbtnText("Light");
 
     }
