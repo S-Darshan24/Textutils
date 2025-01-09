@@ -1,44 +1,10 @@
 import React from 'react'
 
-
-
 export default function About(props) {
-
     let mystyle = {
         color: props.alldark === 'dark' ? 'white' : 'black',
         backgroundColor: props.mode === 'dark' ? 'black' : 'white'
     }
-
-    // const [mystyle, setmystyle] = useState(
-    //     {
-    //         color: "white",
-    //         backgroundColor: "black"
-    //     }
-    // )
-    // const [btntext, setbtnText] = useState("dark mobe off");
-    // const [btnstyle, setbtnstyle] = useState({ backgroundColor: "white" });
-
-    // const aboutdark = () => {
-    //     if (mystyle.color === "black") {
-    //         setmystyle({
-    //             color: "white",
-    //             backgroundColor: "black",
-    //             border: '1px solid white'
-    //         })
-    //         setbtnText("dark mode on");
-    //         setbtnstyle({ backgroundColor: "white", color: "black" });
-    //     } else {
-    //         setmystyle({
-    //             color: "black",
-    //             backgroundColor: "white"
-    //         })
-    //         setbtnText("dark mode off");
-    //         setbtnstyle({ backgroundColor: "black", color: "white" });
-    //     }
-
-    // }
-
-
     return (
         <div className='conteiner' >
             <h1 className='my-3'>About Us</h1>
@@ -78,9 +44,6 @@ export default function About(props) {
                     </div>
                 </div>
             </div>
-            {/* <div className="container">
-                <button type="button" style={btnstyle} className="btn btn-dark my-3" onClick={aboutdark}>{btntext}</button>
-            </div> */}
         </div>
     )
 }

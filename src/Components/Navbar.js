@@ -1,10 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types'
-
 
 export default function Navbar(props) {
-
   const [darkstyle, setdarkstyle] = useState({
     color: "black",
     backgroundColor: "white"
@@ -33,7 +30,6 @@ export default function Navbar(props) {
       document.querySelector('.darkmode').style.backgroundColor = 'white'; 
       document.querySelector('.darkmode').style.color = 'black';
        setbtnText("Light");
-
     }
   }
   return (
@@ -52,23 +48,9 @@ export default function Navbar(props) {
               <Link className="nav-link active" to="/about">about</Link>
             </li>
             <button type="button" className="darkmode" onClick={alldark}>{btnText}</button>
-       
           </ul>
-       
         </div>
       </div>
     </nav>
   )
 }
-
-
-// Navbar.propTypes = {
-//   titel: PropTypes.string.isRequired,
-//   abouttext: PropTypes.string.isRequired
-// }
-
-
-// Navbar.defaultProps = {
-//   title: 'new title',
-//   abouttext: 'new abouttext'
-// }

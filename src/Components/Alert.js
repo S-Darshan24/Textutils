@@ -7,8 +7,5 @@ export default function Alert(props) {
   <strong>{props.alert.type}</strong>:{props.alert.msg}
 </div>}
 </div>
-  
-   
-
   )
 }
